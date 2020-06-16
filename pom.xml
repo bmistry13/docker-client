@@ -304,7 +304,7 @@
           <effort>Max</effort>
           <threshold>Low</threshold>
           <xmlOutput>true</xmlOutput>
-          <findbugsXmlOutputDirectory>${project.build.directory}/findbugsx
+          <findbugsXmlOutputDirectory>${project.build.directory}/findbugs
           </findbugsXmlOutputDirectory>
           <excludeFilterFile>${project.basedir}/findbugs-exclude.xml</excludeFilterFile>
         </configuration>
