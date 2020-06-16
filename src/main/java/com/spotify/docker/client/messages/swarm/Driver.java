@@ -40,7 +40,6 @@ public abstract class Driver {
   @JsonProperty("Name")
   public abstract String name();
 
-  @Nullable
   @JsonProperty("Options")
   public abstract ImmutableMap<String, String> options();
 

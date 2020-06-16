@@ -42,7 +42,6 @@ public abstract class ServiceSpec {
   @JsonProperty("Name")
   public abstract String name();
 
-  @Nullable
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 

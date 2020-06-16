@@ -50,7 +50,6 @@ public abstract class ContainerSpec {
   @JsonProperty("Hostname")
   public abstract String hostname();
 
-  @Nullable
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 

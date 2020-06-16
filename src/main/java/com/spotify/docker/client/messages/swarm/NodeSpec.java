@@ -39,7 +39,6 @@ public abstract class NodeSpec {
   @JsonProperty("Name")
   public abstract String name();
 
-  @Nullable
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 
@@ -74,7 +73,10 @@ public abstract class NodeSpec {
   }
 
   public static NodeSpec.Builder builder(final NodeSpec source) {
-    return new AutoValue_NodeSpec.Builder(source);
+    Map<String,String> newImmutableMap = ImmutableMap.copyOf(source.labels());
+    return new AutoValue_NodeSpec.Builder().name(source.name())
+               .labels(newImmutableMap).role(source.role())
+               .availability(source.availability());
   }
 
   @JsonCreator

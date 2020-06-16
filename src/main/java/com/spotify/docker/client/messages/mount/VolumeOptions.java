@@ -41,7 +41,6 @@ public abstract class VolumeOptions {
   @JsonProperty("NoCopy")
   public abstract Boolean noCopy();
 
-  @Nullable
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 

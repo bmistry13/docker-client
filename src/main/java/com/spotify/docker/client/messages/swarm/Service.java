@@ -78,7 +78,6 @@ public abstract class Service {
     /**
      * Filter by label.
      */
-    @Nullable
     public abstract ImmutableMap<String, String> labels();
     
     public static Builder builder() {

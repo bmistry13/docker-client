@@ -108,7 +108,6 @@ public abstract class ContainerConfig {
     return volumes();
   }
 
-  @Nullable
   @JsonProperty("Volumes")
   public abstract ImmutableSet<String> volumes();
 
